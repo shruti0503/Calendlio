@@ -9,8 +9,9 @@
     
   },
   "engines": {
-    "npm": "9.5.1"
+    "node": "18.16.1"
   },
+  
   "author": "Shruti",
   "license": "ISC",
   "dependencies": {
