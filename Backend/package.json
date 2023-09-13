@@ -8,6 +8,9 @@
     "build": "npm i"
     
   },
+  "engines": {
+    "npm": "9.5.1"
+  },
   "author": "Shruti",
   "license": "ISC",
   "dependencies": {
