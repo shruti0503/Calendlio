@@ -1,0 +1,158 @@
+/* styles.css or your CSS file */
+
+/* Style the main container */
+.main-cont {
+  background-color: #ffffff97; /* Set the background color */
+  padding: 20px; /* Add padding to the container */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the top container */
+.top-cont {
+  margin-top: 1%;
+  display: flex;
+  margin-top: -10%;
+  background-color:  #ffffff97;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.top-cont .head{
+
+  
+
+}
+
+.topp-cont{
+  width: 100%;
+}
+
+/* Style the middle container */
+.middle-cont {
+  width: 100%;
+  background-color:  #ffffff97; /* Set the background color */
+  padding: 20px; /* Add padding to the container */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
+  margin-bottom: 20px; /* Add margin to separate from the bottom container */
+}
+
+/* Style the user details */
+.user-details {
+  width: 100%;
+  font-size: 18px; /* Set the font size */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 2% ;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the bottom container */
+.bottom-cont {
+  margin-top: 1%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  height: 19%;
+  background-color:  #ffffff97;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Style the individual boxes inside the bottom container */
+.boxes {
+  background-color: #e0e0e0;
+  padding: 10px;
+  justify-content: space-between;
+  height: 66%;
+  display: flex;
+  width: 66%;
+  border: solid;
+  border-radius: 5px;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+
+}
+.info div{
+  cursor:pointer;
+  padding: 6px;
+  text-decoration: underline;
+}
+.head-cal{
+  font-size: xx-large;
+  display: flex;
+  text-decoration: underline;
+}
+/* Style the links inside the boxes */
+.link a {
+  text-decoration: none;
+  color: #e6e6e7;
+}
+
+
+/* Style the links on hover */
+.link a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.info div:hover {
+ color: orange;
+}
+
+  @media screen and (max-width: 768px) {
+    .bottom-cont{
+      display: flex;
+      flex-direction: column;
+      
+      margin-bottom: -50%;
+    }
+
+  }
+ 
+
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttons div{
+  display: flex;
+  margin: 2px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.UserNameAndPic img{
+  border-radius: 100%;
+  margin: auto 93px;
+}
+.index{
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,45 @@
+.topp-cont{
+    margin-left:2%;
+}
+/* TimeAvailable.css */
+.topp-cont {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .timings {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="time"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .times {
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 10px;
+  }
+  
+  .time-box {
+    padding: 5px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  

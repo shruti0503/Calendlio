@@ -1,0 +1,118 @@
+.main {
+ 
+    display: flex;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left-cont {
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: flex-start; /* Adjust alignment */
+    justify-content: center;
+}
+
+.right-cont {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first{
+    margin-left:4%;
+    margin-bottom: -6%;
+}
+
+.slogan {
+    margin-left: 10%;
+    font-size: 41px;
+    margin-bottom: -10%;
+    padding: 12px;
+    /* margin-bottom: 50%; */
+}
+
+.slogan-line {
+    margin-left: 10%;
+    /* margin-top: -51%; */
+}
+.enter {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    align-items: center; /* Vertically center the input and button */
+    height: 4vh;
+  }
+  
+  .btn {
+    border: none;
+    width: 37%;
+    border-radius: 19px;
+    background-color: #d2d1d0;
+    color: #c3a8a8;
+    padding: 10px 20px;
+    /* margin-left: -51px; */
+    cursor: pointer;
+  }
+
+  .btn:hover {
+   background-color: #999;
+
+  }
+  
+  
+  .email-enter {
+    width: 41vh; /* Fill the remaining width in the container */
+    padding: 10px; /* Add some padding for better appearance */
+    border: 1px solid #ccc; /* Add a border for input */
+    border-radius: 5px; /* Adjust the border-radius to match the button */
+    outline: none; /* Remove the input focus outline */
+  }
+  
+  .email-enter::placeholder {
+    color: #999; /* Change placeholder text color to your preference */
+  }
+
+  .left-cont-main{
+    padding: 60px;
+    padding-bottom: 33%;
+  }
+  
+
+.calender-image-container {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.calender-image:hover {
+    transform: rotateY(15deg); /* Adjust the rotation angle as desired */
+}
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack left and right content on smaller screens */
+        align-items: center; /* Center content vertically */
+    }
+
+    .left-cont {
+        width: 100%;
+        text-align: center; /* Center text in left content on smaller screens */
+    }
+    .left-cont-main{
+        padding: 25px;
+    padding-bottom: 7%;
+    }
+
+    .slogan {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+    .calender-image{
+        width: 67%;
+    }
+}
+

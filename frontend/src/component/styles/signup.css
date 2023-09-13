@@ -1,0 +1,75 @@
+/* SignUp Container */
+.main-cont{
+  align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 90vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.logo{
+  width: 10%;
+}
+.google-signIn{
+  display: flex;
+  justify-content: space-evenly;
+}
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* SignUp Form */
+  .sign-in-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* SignUp Heading */
+  .sign-in-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .sign-in-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* SignUp Button */
+  .sign-in-container button {
+    background-color: #b5bfc9;
+    color: #044e8e;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* SignUp Button Hover */
+  .sign-in-container button:hover {
+    background-color: #77abe2;
+  }
+  
+  /* Authdetails Component */
+  .sign-in-container .auth-details {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
