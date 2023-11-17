@@ -53,7 +53,7 @@ const scopes = [
   app.post('/send-email-consultant', (req, res) => {
       emailConsultant  = req.body;
   
-    // Now you can use the emailConsultant value as needed
+    // Now  can use the emailConsultant value as needed
     console.log('Received emailConsultant:', emailConsultant);
   
     // Perform any other actions with the emailConsultant data here
@@ -71,7 +71,7 @@ app.get('/google/redirect', async (req, res) => {
 oauth2Client.setCredentials(tokens.tokens); // Set the credentials with the received tokens
 
     
-    // Now you can use the access token for authorized API requests
+    // now can use the access token for authorized API requests
     // Refresh token can be used to refresh the access token when it expires
 
     // Redirect or respond as needed
