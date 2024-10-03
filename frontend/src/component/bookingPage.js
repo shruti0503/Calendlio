@@ -6,6 +6,7 @@ import axios from "axios";
 import { auth } from '../firebase'; // Import Firebase Authentication
 import ConfirmationModal from './confirmationmodel';
 import './book.css'
+import { emailuser } from './state';
 
 
 function AppointmentApp(times) {

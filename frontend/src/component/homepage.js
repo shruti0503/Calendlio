@@ -16,6 +16,7 @@ function Home(){
   // Check if the user is logged in and perform redirection
   useEffect(() => {
     const user = auth.currentUser;
+    console.log("user is", user)
 
     if (user) {
       navigate('/get-started');

@@ -6,7 +6,8 @@ import { onAuthStateChanged, signOut, GoogleAuthProvider } from 'firebase/auth';
 import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import gg from './google.png'
-
+import AppointmentApp from '../bookingPage.js';
+import { emailuser } from '../state.js';
 
 
 import {
@@ -15,6 +16,8 @@ import {
 const AuthDetails = () => {
 const [authUser, setAuthUser] = useState(null);
 const navigate = useNavigate(); // Initialize useNavigate
+const [email ,setEmail]=useState('');
+
   useEffect(() => {
     const listen = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -39,13 +42,15 @@ const navigate = useNavigate(); // Initialize useNavigate
 
   const handleGoogleSignIn = async () => {
     const provider = new GoogleAuthProvider();
-    // Add any additional scopes or permissions here if needed
+
    await signInWithPopup(auth, provider)
       .then((result) => {
         // Handle successful sign-in
         const user = result.user;
         console.log('Sign-in with Google successful');
         console.log('User:', user);
+        emailuser=user.email;
+        
        
       })
       .catch((error) => {
@@ -66,7 +71,11 @@ const navigate = useNavigate(); // Initialize useNavigate
         <>
           <button className='google-signIn' onClick={handleGoogleSignIn}>Sign In with Google<img className='logo' src={gg} /></button>
           <p>Signed Out</p>
+
+         
+
         </>
+        
       )}
     </div>
   );

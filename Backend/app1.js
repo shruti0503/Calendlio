@@ -16,7 +16,7 @@ const uniqueId = uuidv4();
 const bookingPageUrl = `http://localhost:3000/booking-page/${uniqueId}`;
 
 const auth2client = process.env.NODE_ENV || 8000;
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4000 || 5000;
 app.use(cors());
 app.use(express.json()); // Middleware to parse JSON request bodies
 const oauth2Client = new google.auth.OAuth2(
@@ -56,8 +56,6 @@ const scopes = [
     // Now  can use the emailConsultant value as needed
     console.log('Received emailConsultant:', emailConsultant);
   
-    // Perform any other actions with the emailConsultant data here
-  
     // Send a response back to the frontend
     res.status(200).send('Email consultant received successfully');
   });
@@ -68,7 +66,7 @@ app.get('/google/redirect', async (req, res) => {
   try {
     // Exchange authorization code for tokens
     const tokens = await oauth2Client.getToken(authorizationCode);
-oauth2Client.setCredentials(tokens.tokens); // Set the credentials with the received tokens
+    oauth2Client.setCredentials(tokens.tokens); // Set the credentials with the received tokens
 
     
     // now can use the access token for authorized API requests
@@ -171,3 +169,12 @@ app.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
 
+// OAuth2 -> client setup 
+// Defining scops 
+// google authoriusation endpoint -> generaates authentication Url
+// using OAuth2Client -> redirects the user to the google's ayh endpoint to grant permissions
+// after this-> user grants persmission , google redirects back to 'google/redirect' with auth code
+// -> exchanges code for access and refresh tokens using OAuth2Client
+// HANDLING EMAIL DATA :  endpoints for reciving and storing email data 
+
+// Scheduling events: when a request is made to 'schedule_event' -> hand;es 
